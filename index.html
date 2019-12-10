@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Libreria Santander</title>
+</head>
+<body>
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+        <li class="titleLib"><a class="waves-effect waves-red" href="home.html" target="iframe-lib">Libreria Front Santander</a></li>
+        <li>
+            <ul class="collapsible collapsible-accordion">
+                <!--<li class="bold"><a class="collapsible-header waves-effect waves-teal" tabindex="0">CSS</a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="color.html">_EJ</a></li>   
+                        </ul>
+                    </div>
+                </li>-->
+            <li class="bold"><a class="collapsible-header waves-effect waves-red" tabindex="0">Formulario</a>
+              <div class="collapsible-body">
+                <ul>
+                  <li><a class="waves-effect waves-red" href="checkbox.html" target="iframe-lib">Checkbox</a></li>
+                  <li><a class="waves-effect waves-red" href="radiobutton.html" target="iframe-lib">Radio Button</a></li>
+                  <li><a class="waves-effect waves-red" href="#!">Select</a></li>
+                  <li><a class="waves-effect waves-red" href="input.html" target="iframe-lib">Inputs</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+    </ul>
+<iframe id="contOp" class="mar-left-300" name="iframe-lib" src="home.html" scrolling="no"  frameborder="0" onload="actualizar_altura(this)"></iframe>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $('.sidenav').sidenav();
+        $('.collapsible').collapsible();
+        /*var iframe = document.getElementById("contOp");
+        iframe.addEventListener("load", actualizar_altura);*/
+    });
+    
+   
+    function actualizar_altura(obj){
+       obj.style.height = obj.contentWindow.document.body.scrollHeight + "px";
+    }
+    </script>
+</body>
+</html>

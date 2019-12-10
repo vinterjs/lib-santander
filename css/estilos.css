@@ -1,0 +1,268 @@
+@font-face{font-family: 'SantanderText';font-style: normal;font-weight: 400;font-display: swap;src: local('Santander Text'), local('SantanderText-Regular'), url(fonts/SantanderText-Regular.ttf);}@font-face{font-family: 'SantanderText';font-style: italic;font-weight: 400;font-display: swap;src: local('SantanderText-LightItalic'), local('SantanderText-LightItalic'), url(fonts/SantanderText-Italic.ttf);}@font-face{font-family: 'SantanderText';font-style: italic;font-weight: 300;font-display: swap;src: local('SantanderText-LightItalic'), local('SantanderText-LightItalic'), url(fonts/SantanderText-LightItalic.ttf);}@font-face{font-family: 'SantanderText';font-style: normal;font-weight: 300;font-display: swap;src: local('SantanderText-Light'), local('SantanderText-Light'), url(fonts/SantanderText-Light.ttf);}@font-face{font-family: 'SantanderText';font-style: italic;font-weight: 700;font-display: swap;src: local('SantanderText-BoldItalic'), local('SantanderText-BoldItalic'), url(fonts/SantanderText-BoldItalic.ttf);}@font-face{font-family: 'SantanderText';font-style: normal;font-weight: 700;font-display: swap;src: local('SantanderText-Bold'), local('SantanderText-Bold'), url(fonts/SantanderText-Bold.ttf);}html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family: 'SantanderText' }
+* {
+  font-family: 'SantanderText', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  box-sizing: border-box;
+  outline: none;
+}
+/*input*/
+.input-std{
+    position: relative;
+    height: 70px;
+    margin-bottom: 15px;
+}
+.input-std > *{
+    transition: ease-out .2s;
+    -webkit-transition: ease-out .2s;
+    -o-transition: ease-out .2s;
+}
+.input-std > input{
+    height: 50px;
+    width: 100%;
+    color: #444;
+    font-size: 17px;
+    border: none;
+    padding: 0px 0 0 15px;
+    background-color: #F7FBFC;
+}
+.input-std > .msj-input{
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+    color: #444;
+}
+.input-std > .msj-input-error{
+    font-size: 14px;
+    font-weight: 400;
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+    opacity: 0;
+}
+.input-std > .linea-input{
+    position: absolute;
+    height: 1px;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #CEDEE7;
+}
+.input-std > input:focus ~ .linea-input{
+    height: 2px;
+    background-color: #9BC3D3;
+}
+.input-std > label{
+    position: absolute;
+    top: 14px;
+    left: 15px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #767676;
+    cursor: text;
+}
+
+.input-std > input:focus, .input-std > input:valid{
+    padding-top: 11px;
+}
+.input-std > input:focus ~ label, .input-std > input:valid ~label{
+    font-size: 12px;
+    top: 5px;
+}
+.input-std > input.invalid ~ .msj-input-error{
+    opacity: 1;
+}
+.input-std > input.invalid ~ .linea-input{
+    background-color: #CC0000
+}
+.input-std > input.invalid ~ label, .input-std > input.invalid ~{
+    color: #CC0000;
+}
+.input-std > input.invalid ~ .msj-input, .input-std > input.invalid ~ .msj-input-error, .input-std > input.invalid ~ label{
+    color: #CC0000;
+}
+.input-std > .codz, .input-std > .sigPeso{
+    position: absolute;
+    top: 22px;
+    left: 15px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #767676;
+    opacity: 0;
+}
+.input-std > input.telefono{
+    padding-left: 45px;
+}
+.input-std > input.monto{
+    padding-left: 25px;
+}
+.input-std > input.telefono:focus ~ .codz, .input-std > input.telefono:valid ~ .codz, .input-std > input:focus ~ .sigPeso, .input-std > input:valid ~ .sigPeso{
+    opacity: 1;
+}
+.input-std > input.telefono.invalid ~ .msj-input{
+    opacity: 0;
+}
+/*fin input*/
+/*CHECKBOX*/
+.cb-st{padding-bottom: 10px}
+[type="checkbox"].check-std:not(:checked), [type="checkbox"].check-std:checked{
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+[type="checkbox"].check-std+span{
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    display: inline-block;
+    height: 25px;
+    line-height: 25px;
+    font-size: 14px;
+    font-weight: 400;
+    user-select: none;
+}
+
+[type="checkbox"].check-std:checked+span:before{
+    top: 0;
+    left: 1px;
+    width: 4px;
+    height: 10px;
+    border-top: 2px solid #0000;
+    border-left: 2px solid #0000;
+    border-right: 3px solid #ADC000;
+    border-bottom: 3px solid #ADC000;
+    -webkit-transform: rotateZ(37deg);
+    transform: rotateZ(37deg);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
+[type="checkbox"].check-std+span:before,
+[type="checkbox"].check-std+span:after{
+    content: "";
+    left: 0;
+    position: absolute;
+    transition: border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s;
+    -webkit-transition: border .25s, background-color .25s, width .20s .1s, height .20s .1s, top .20s .1s, left .20s .1s;
+    z-index: 1;
+}
+[type="checkbox"].check-std+span:before{
+    border: 2px solid #5a5a5a;
+    border-radius: 1px;
+    margin-top: 3px;
+}
+[type="checkbox"].check-std:checked+span:after{
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #444;
+    background-color: #fff;
+    z-index: 0;
+    border-radius: 5px;
+}
+[type="checkbox"].check-std:not(:checked)+span:before{
+    width: 0;
+    height: 0;
+    border: 3px solid #0000;
+    left: 6px;
+    top: 10px;
+    -webkit-transform: rotateZ(37deg);
+    transform: rotateZ(37deg);
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+}
+[type="checkbox"].check-std:not(:checked)+span::after{
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 1px solid #444;
+    border-radius: 5px;
+    top: 0px;
+    z-index: 0;
+}
+[type="checkbox"].check-std:checked:disabled+span:before
+{
+    border-right: 3px solid #c2c2c2;
+    border-bottom: 3px solid #c2c2c2;
+}
+[type="checkbox"].check-std:checked:disabled+span:after,
+[type="checkbox"].check-std:disabled+span:after{
+    border: 1px solid #c2c2c2;
+    background-color: #f0f0f0;
+}
+[type="checkbox"].check-std:disabled,
+[type="checkbox"].check-std:disabled+span{
+    cursor: default;
+}
+/*FIN CHECKBOX*/
+/* RADIO BUTTON */
+.radio-std{
+    margin-bottom: 5px;
+}
+.radio-std > label{
+    font-size: 18px;
+    color: #6D6D6D;
+}
+.radio-std > label > [type="radio"]:not(:checked),
+.radio-std > label > [type="radio"]:checked{
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    box-sizing: border-box;
+    padding: 0;
+}
+.radio-std > label > [type="radio"]:not(:checked)+span,
+.radio-std > label > [type="radio"]:checked+span{
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    display: inline-block;
+    height: 25px;
+    padding-top: 3px;
+    font-size: 18px;
+    user-select: none;
+}
+.radio-std > label > [type="radio"]:not(:checked)+span:before,
+.radio-std > label > [type="radio"]:not(:checked)+span:after{
+    border: 1px solid #6d6d6d;
+}
+.radio-std > label > [type="radio"]:checked+span:before{
+    border: 1px solid #6d6d6d;
+}
+.radio-std > label > [type="radio"]:checked+span:after{
+    border: 1px solid transparent;
+}
+.radio-std > label > [type="radio"]:not(:checked)+span:before,
+.radio-std > label > [type="radio"]:not(:checked)+span:after,
+.radio-std > label > [type="radio"]:checked+span:before,
+.radio-std > label > [type="radio"]:checked+span:after{
+    border-radius: 50%;
+    background: white;
+}
+.radio-std > label > [type="radio"]+span:before,
+.radio-std > label > [type="radio"]+span:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 4px;
+    width: 16px;
+    height: 16px;
+    z-index: 0;
+    transition: all ease .2s;
+    -webkit-transition: all ease .2s;
+}
+.radio-std > label > [type="radio"]:not(:checked)+span:after{
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+.radio-std > label > [type="radio"]:checked+span:after{
+    -webkit-transform: scale(0.4);
+    transform: scale(0.4);
+    background-color: #EC0000;
+}
+/* FIN RADIO BUTON */

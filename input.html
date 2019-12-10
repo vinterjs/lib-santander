@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/prism.css">
+    <title>Input</title>
+</head>
+<body>
+    <h5 class="titleIf">Input</h5>
+    <div class="cont">
+        <!--Nombre-->
+        <div class="input-std">
+            <input class="soloLetras" type="text" required autocomplete="off">
+            <label>Nombre</label>
+            <span class="linea-input"></span>
+        </div>
+        <div class="input-std">
+            <input class="soloNombre" type="text" required autocomplete="off">
+            <label>Nombre Apellidos</label>
+            <span class="linea-input"></span>
+        </div>
+        <!--Rut-->
+        <div class="input-std">
+            <input id="rut" class="" type="text" required maxlength="13" autocomplete="off">
+            <label>Rut</label>
+            <span class="linea-input"></span>
+            <span class="msj-input-error">Ingrese RUT v&aacute;lido.</span>
+        </div>
+        <!--Telefono-->
+        <div class="input-std">
+            <input class="soloNumeros telefono" type="text" required maxlength="9" autocomplete="off">
+            <label>Tel&eacute;fono</label>
+            <span class="linea-input"></span>
+            <span class="codz">+56</span>
+            <span class="msj-input-error">Ingrese un tel&eacute;fono v&aacute;lido.</span>
+            <span class="msj-input">Texto de ayuda</span>
+        </div>
+        <!--Email-->
+        <div class="input-std">
+            <input class="email" type="text" required autocomplete="off">
+            <label>E-mail</label>
+            <span class="linea-input"></span>
+            <span class="msj-input-error">Ingrese un e-mail v&aacute;lido.</span>
+        </div>
+        <!--Monto-->
+        <div class="input-std">
+            <input class="monto" type="text" required monto-minimo="100" monto-maximo="10000" autocomplete="off">
+            <label>Monto</label>
+            <span class="sigPeso">$</span>
+            <span class="linea-input"></span>
+            <span class="msj-input-error">Ingrese un monto v&aacute;lido.</span>
+        </div>
+    </div>
+    <div class="separador"></div>
+    <div class="cont-codigo">
+        <h2>Input Nombre</h2>
+        <pre><code class="language-markup">&lt;div class=&quot;input-std&quot;&gt;
+    &lt;input class=&quot;soloLetras&quot; type=&quot;text&quot; required autocomplete=&quot;off&quot;&gt;
+    &lt;label&gt;Nombre&lt;/label&gt;
+    &lt;span class=&quot;linea-input&quot;&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+   <h2>Input RUT</h2>
+   <pre><code class="language-markup">&lt;div class=&quot;input-std&quot;&gt;
+    &lt;input id=&quot;rut&quot; class=&quot;&quot; type=&quot;text&quot; required maxlength=&quot;13&quot; autocomplete=&quot;off&quot;&gt;
+    &lt;label&gt;Rut&lt;/label&gt;
+    &lt;span class=&quot;linea-input&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;msj-input-error&quot;&gt;Ingrese RUT válido.&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+    <h2>Input Tel&eacute;fono</h2>
+    <pre><code class="language-markup">&lt;div class=&quot;input-std&quot;&gt;
+    &lt;input class=&quot;soloNumeros telefono&quot; type=&quot;text&quot; required maxlength=&quot;9&quot; autocomplete=&quot;off&quot;&gt;
+    &lt;label&gt;Teléfono&lt;/label&gt;
+    &lt;span class=&quot;linea-input&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;codz&quot;&gt;+56&lt;/span&gt;
+    &lt;span class=&quot;msj-input-error&quot;&gt;Ingrese un teléfono válido.&lt;/span&gt;
+    &lt;span class=&quot;msj-input&quot;&gt;Texto de ayuda&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+    <h2>Input E-mail</h2>
+    <pre><code class="language-markup">&lt;div class=&quot;input-std&quot;&gt;
+    &lt;input class=&quot;email&quot; type=&quot;text&quot; required autocomplete=&quot;off&quot;&gt;
+    &lt;label&gt;E-mail&lt;/label&gt;
+    &lt;span class=&quot;linea-input&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;msj-input-error&quot;&gt;Ingrese un e-mail válido.&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+    <h2>Input Monto</h2>
+    <pre><code class="language-markup">&lt;div class=&quot;input-std&quot;&gt;
+    &lt;input class=&quot;monto&quot; type=&quot;text&quot; required monto-minimo=&quot;100&quot; monto-maximo=&quot;10000&quot; autocomplete=&quot;off&quot;&gt;
+    &lt;label&gt;Monto&lt;/label&gt;
+    &lt;span class=&quot;sigPeso&quot;&gt;$&lt;/span&gt;
+    &lt;span class=&quot;linea-input&quot;&gt;&lt;/span&gt;
+    &lt;span class=&quot;msj-input-error&quot;&gt;Ingrese un monto válido.&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/prism.js"></script>
+</body>
+</html>
