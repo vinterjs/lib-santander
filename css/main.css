@@ -88,6 +88,7 @@
 #contOp{
     width: -webkit-fill-available;
     height: fit-content;
+    padding-right: 10px;
 }
 .titleLib > a{
     padding: 15px !important;
@@ -139,4 +140,48 @@
 }
 .sidenav{
     width: 280px;
+}
+.row-ico{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    position: relative;
+}
+.row-ico > .col-2{
+    cursor: pointer;
+    max-width: 16.666667%;
+    -webkit-box-flex: 0;
+    flex: 0 0 16.666667%;
+    padding: 15px 15px 25px;
+    margin: 0px 25px 25px 0;
+    box-shadow: 0px 2px 3px rgba(0,0,0,0.1);
+}
+.row-ico > .col-2 > .cont-icon{
+    position: relative;
+}
+.copiado{
+    display: none;
+    position: absolute;
+    background: #619943;
+    width: 115px;
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: -70px;
+    left: 0;
+    right: 0;
+    font-family:SantanderTextW05-Bold;
+}
+.row-ico > .col-2.text-center{
+    text-align: center;
+}
+.f-42 {
+    font-size: 42px;
+}
+.f-14{
+    font-size: 14px;
+    line-height: 14px;
+    color: #444;
 }
