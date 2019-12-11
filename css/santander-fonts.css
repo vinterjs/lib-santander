@@ -1,0 +1,97 @@
+@font-face
+{
+	font-family:SantanderTextW05-Light;
+	src:url(https://banco.santander.cl/uploads/000/008/272/1c945c05-9092-414b-9de8-025bdcf03c99/original/SantanderTextW05-Light.eot#iefix);
+	src:url(https://banco.santander.cl/uploads/000/008/272/1c945c05-9092-414b-9de8-025bdcf03c99/original/SantanderTextW05-Light.eot#iefix) format("eot"),url(https://banco.santander.cl/uploads/000/008/273/75e3141d-d598-4746-8ae5-3f7d51e640f2/original/SantanderTextW05-Light.woff2) format("woff2"),url(https://banco.santander.cl/uploads/000/008/274/ffac30e4-d1f0-4017-ba79-bef742f23906/original/SantanderTextW05-Light.woff) format("woff"),url(https://banco.santander.cl/uploads/000/008/248/288001ba-e690-4f30-8f48-079bd2dc2901/original/SantanderTextW05-Light.ttf) format("truetype")
+}
+
+@font-face
+{
+	font-family:SantanderTextW05-LightIt;
+	src:url(https://banco.santander.cl/uploads/000/008/281/af705b91-d37e-4e7f-8cc5-9761c1eb87e9/original/SantanderTextW05-LightIt.eot#iefix);
+	src:url(https://banco.santander.cl/uploads/000/008/281/af705b91-d37e-4e7f-8cc5-9761c1eb87e9/original/SantanderTextW05-LightIt.eot#iefix) format("eot"),url(https://banco.santander.cl/uploads/000/008/277/503de083-c12d-4fb9-aa9a-9430b31d6596/original/SantanderTextW05-LightIt.woff2) format("woff2"),url(https://banco.santander.cl/uploads/000/008/275/fef06e13-1284-4d58-ab97-1b7eb028d83e/original/SantanderTextW05-LightIt.woff) format("woff"),url(https://banco.santander.cl/uploads/000/008/249/53fbc386-763d-41bc-88e2-da60df0c15d7/original/SantanderTextW05-LightIt.ttf) format("truetype")
+}
+
+@font-face
+{
+	font-family:SantanderTextW05-Regular;
+	src:url(https://banco.santander.cl/uploads/000/008/278/45ea9c1c-92de-4c2c-a13b-ed93c72cf6fa/original/SantanderTextW05-Regular.eot#iefix);
+	src:url(https://banco.santander.cl/uploads/000/008/278/45ea9c1c-92de-4c2c-a13b-ed93c72cf6fa/original/SantanderTextW05-Regular.eot#iefix) format("eot"),url(https://banco.santander.cl/uploads/000/008/279/62caf270-cc00-4e16-b306-3fbe16f8a459/original/SantanderTextW05-Regular.woff2) format("woff2"),url(https://banco.santander.cl/uploads/000/008/280/dad3fcb4-443e-4eaf-822c-da77cf4dc6c7/original/SantanderTextW05-Regular.woff) format("woff"),url(https://banco.santander.cl/uploads/000/008/250/4a9df1c3-122d-47dd-8128-fbe2578ed9e5/original/SantanderTextW05-Regular.ttf) format("truetype")
+}
+
+@font-face
+{
+	font-family:SantanderTextW05-Italic;
+	src:url(https://banco.santander.cl/uploads/000/008/269/f74383d3-c950-4057-ab1a-99a3d98283f9/original/SantanderTextW05-Italic.eot#iefix);
+	src:url(https://banco.santander.cl/uploads/000/008/269/f74383d3-c950-4057-ab1a-99a3d98283f9/original/SantanderTextW05-Italic.eot#iefix) format("eot"),url(https://banco.santander.cl/uploads/000/008/271/d06d799d-7548-4bac-9cdc-c34fc04a6da3/original/SantanderTextW05-Italic.woff2) format("woff2"),url(https://banco.santander.cl/uploads/000/008/270/3098efa5-9cd2-43fc-91c8-2eaf4e33ff01/original/SantanderTextW05-Italic.woff) format("woff"),url(https://banco.santander.cl/uploads/000/008/247/c7400415-db79-4f04-9f46-04d5573474a3/original/SantanderTextW05-Italic.ttf) format("truetype")
+}
+
+@font-face
+{
+	font-family:SantanderTextW05-Bold;
+	src:url(https://banco.santander.cl/uploads/000/008/263/1d0be4d0-d81e-4e68-bd70-a95d3e2dd73b/original/SantanderTextW05-Bold.eot#iefix);
+	src:url(https://banco.santander.cl/uploads/000/008/263/1d0be4d0-d81e-4e68-bd70-a95d3e2dd73b/original/SantanderTextW05-Bold.eot#iefix) format("eot"),url(https://banco.santander.cl/uploads/000/008/266/e484f0ad-27d2-43dc-9a85-6b8602873091/original/SantanderTextW05-Bold.woff2) format("woff2"),url(https://banco.santander.cl/uploads/000/008/264/e3739b0e-efcd-4d7a-be27-93ced14f13b9/original/SantanderTextW05-Bold.woff) format("woff"),url(https://banco.santander.cl/uploads/000/008/245/aba5ba79-8f89-46f6-aae9-945e275d6700/original/SantanderTextW05-Bold.ttf) format("truetype")
+}
+
+@font-face
+{
+	font-family:SantanderTextW05-BoldItalic;
+	src:url(https://banco.santander.cl/uploads/000/008/265/dcd7fc30-1299-414c-ab42-990bb511a482/original/SantanderTextW05-BoldItalic.eot#iefix);
+	src:url(https://banco.santander.cl/uploads/000/008/265/dcd7fc30-1299-414c-ab42-990bb511a482/original/SantanderTextW05-BoldItalic.eot#iefix) format("eot"),url(https://banco.santander.cl/uploads/000/008/268/bbbc468f-1a6a-4a14-92b9-e2fdc92a0ab5/original/SantanderTextW05-BoldItalic.woff2) format("woff2"),url(https://banco.santander.cl/uploads/000/008/267/b5a464ce-1c13-4608-a287-e5708af5f2de/original/SantanderTextW05-BoldItalic.woff) format("woff"),url(https://banco.santander.cl/uploads/000/008/246/0bdd4dc5-e712-4584-b7c0-b51f72eac19e/original/SantanderTextW05-BoldItalic.ttf) format("truetype")
+}
+
+@font-face
+{
+	font-family:SantanderHeadlineW05-Bold;
+	src:url(https://banco.santander.cl/uploads/000/008/370/e3d0bdac-7835-4965-a4ff-427ca6ac4fe8/original/SantanderHeadlineW05-Bold.eot#iefix);
+	src:url(https://banco.santander.cl/uploads/000/008/370/e3d0bdac-7835-4965-a4ff-427ca6ac4fe8/original/SantanderHeadlineW05-Bold.eot#iefix) format("eot"),url(https://banco.santander.cl/uploads/000/008/372/13026505-1106-49c6-a4f9-854cc9b6fa57/original/SantanderHeadlineW05-Bold.woff2) format("woff2"),url(https://banco.santander.cl/uploads/000/008/369/8170ee73-7784-4264-8f24-992ff7f26776/original/SantanderHeadlineW05-Bold.woff) format("woff"),url(https://banco.santander.cl/uploads/000/008/371/3d5e8b82-bf0f-4283-81ee-bc86372cc1af/original/SantanderHeadlineW05-Bold.ttf) format("truetype")
+}
+
+@font-face
+{
+	font-family:SantanderHeadlineW05-Regular;
+	src:url(https://banco.santander.cl/uploads/000/009/062/c7bebba4-e2e2-48e8-8f59-7a1ce2b4aa03/original/SantanderHeadlineW05-Rg.eot);
+	src:url(https://banco.santander.cl/uploads/000/009/062/c7bebba4-e2e2-48e8-8f59-7a1ce2b4aa03/original/SantanderHeadlineW05-Rg.eot#iefix) format("eot"),url(https://banco.santander.cl/uploads/000/009/063/97b56372-ea86-4cd1-b24a-1f541e345150/original/SantanderHeadlineW05-Rg.woff2) format("woff2"),url(https://banco.santander.cl/uploads/000/009/065/8a8f093b-4fc5-4662-905a-d17f077cbef8/original/SantanderHeadlineW05-Rg.woff) format("woff"),url(https://banco.santander.cl/uploads/000/009/064/ba36ba18-b6a7-4c70-ad53-7754643272cd/original/SantanderHeadlineW05-Rg.ttf) format("truetype")
+}
+
+@font-face
+{
+	font-family:SantanderMicroTextW01-Light;
+	src:url(https://banco.santander.cl/uploads/000/010/594/c942798b-9080-4b7b-aba0-fd5123f4ea92/original/SantanderMicroTextW01-Light.eot);
+	src:url(https://banco.santander.cl/uploads/000/010/594/c942798b-9080-4b7b-aba0-fd5123f4ea92/original/SantanderMicroTextW01-Light.eot#iefix) format("eot"),url(https://banco.santander.cl/uploads/000/010/599/b8f8baf0-71f8-44f9-bdc4-2b75c260cfb3/original/SantanderMicroTextW01-Light.woff2) format("woff2"),url(https://banco.santander.cl/uploads/000/010/601/cd5af606-9129-4018-b094-7016c5e39e6e/original/SantanderMicroTextW01-Light.woff) format("woff"),url(https://banco.santander.cl/uploads/000/010/609/ff02bf3b-b779-4928-8456-41a99545831b/original/SantanderMicroTextLt.ttf) format("truetype")
+}
+
+@font-face
+{
+	font-family:SantanderMicroTextW01-LtIt;
+	src:url(https://banco.santander.cl/uploads/000/010/596/89b6342d-ec98-4893-93fe-a0010299b9ca/original/SantanderMicroTextW01-LtIt.eot);
+	src:url(https://banco.santander.cl/uploads/000/010/596/89b6342d-ec98-4893-93fe-a0010299b9ca/original/SantanderMicroTextW01-LtIt.eot#iefix) format("eot"),url(https://banco.santander.cl/uploads/000/010/600/3b9b9026-3d0a-4f31-b898-acb8adb65948/original/SantanderMicroTextW01-LtIt.woff2) format("woff2"),url(https://banco.santander.cl/uploads/000/010/597/9f9b9fe5-6ff4-4e69-91b4-e26751213978/original/SantanderMicroTextW01-LtIt.woff) format("woff"),url(https://banco.santander.cl/uploads/000/010/606/0a4fec04-d0bc-43ac-ba16-b594486a6ceb/original/SantanderMicroTextLtIt.ttf) format("truetype")
+}
+
+@font-face
+{
+	font-family:SantanderMicroTextW01-It;
+	src:url(https://banco.santander.cl/uploads/000/010/593/8c7a047d-b210-4d70-b6a4-a4e77c9330cf/original/SantanderMicroTextW01-It.eot);
+	src:url(https://banco.santander.cl/uploads/000/010/593/8c7a047d-b210-4d70-b6a4-a4e77c9330cf/original/SantanderMicroTextW01-It.eot#iefix) format("eot"),url(https://banco.santander.cl/uploads/000/010/595/9e957349-ca49-4683-8f32-05691185f005/original/SantanderMicroTextW01-It.woff2) format("woff2"),url(https://banco.santander.cl/uploads/000/010/592/f6698ecc-6f11-415e-b5b5-c59124e95cea/original/SantanderMicroTextW01-It.woff) format("woff"),url(https://banco.santander.cl/uploads/000/010/608/6b92c9b5-29d6-48a3-b865-ae9d87b65eb0/original/SantanderMicroTextIt.ttf) format("truetype")
+}
+
+@font-face
+{
+	font-family:SantanderMicroTextW01-Bold;
+	src:url(https://banco.santander.cl/uploads/000/010/587/88493cb7-2266-4488-a6be-e337690f5c11/original/SantanderMicroTextW01-Bold.eot);
+	src:url(https://banco.santander.cl/uploads/000/010/587/88493cb7-2266-4488-a6be-e337690f5c11/original/SantanderMicroTextW01-Bold.eot#iefix) format("eot"),url(https://banco.santander.cl/uploads/000/010/591/72d3aab5-7fcc-4680-ba39-603a805ec9d3/original/SantanderMicroTextW01-Bold.woff2) format("woff2"),url(https://banco.santander.cl/uploads/000/010/589/141a7b78-7626-4dc6-8484-24f608147af7/original/SantanderMicroTextW01-Bold.woff) format("woff"),url(https://banco.santander.cl/uploads/000/010/604/e59319b4-b7e4-4bc4-b0f7-261f838c4b11/original/SantanderMicroTextBd.ttf) format("truetype")
+}
+
+@font-face
+{
+	font-family:SantanderMicroTextW01-BdIt;
+	src:url(https://banco.santander.cl/uploads/000/010/586/5335daf8-c7af-41f2-8b3b-4ba671661d20/original/SantanderMicroTextW01-BdIt.eot);
+	src:url(https://banco.santander.cl/uploads/000/010/586/5335daf8-c7af-41f2-8b3b-4ba671661d20/original/SantanderMicroTextW01-BdIt.eot#iefix) format("eot"),url(https://banco.santander.cl/uploads/000/010/588/0417a992-665e-4181-b402-027250b2f1d3/original/SantanderMicroTextW01-BdIt.woff2) format("woff2"),url(https://banco.santander.cl/uploads/000/010/590/6a4044d8-cf92-4c5c-a0b1-3265c79b21ba/original/SantanderMicroTextW01-BdIt.woff) format("woff"),url(https://banco.santander.cl/uploads/000/010/605/ec124b4d-427f-4da0-ab17-0d6ddb8790c1/original/SantanderMicroTextBdIt.ttf) format("truetype")
+}
+
+@font-face
+{
+	font-family:SantanderMicroTextW01-Rg;
+	src:url(https://banco.santander.cl/uploads/000/010/598/b590d0af-2243-4aeb-8152-8c07dcfe7084/original/SantanderMicroTextW01-Rg.eot);
+	src:url(https://banco.santander.cl/uploads/000/010/598/b590d0af-2243-4aeb-8152-8c07dcfe7084/original/SantanderMicroTextW01-Rg.eot#iefix) format("eot"),url(https://banco.santander.cl/uploads/000/010/603/d05096fd-a65e-47f6-8a5e-fc8184b208b5/original/SantanderMicroTextW01-Rg.woff2) format("woff2"),url(https://banco.santander.cl/uploads/000/010/602/2f92160a-cb9a-4ce8-8304-aa8ab8745538/original/SantanderMicroTextW01-Rg.woff) format("woff"),url(https://banco.santander.cl/uploads/000/010/607/156d00bb-d09e-470e-b467-15e1b7ad1a3d/original/SantanderMicroText.ttf) format("truetype")
+}

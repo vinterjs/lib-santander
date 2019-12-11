@@ -1,13 +1,12 @@
-@font-face{font-family: 'SantanderText';font-style: normal;font-weight: 400;font-display: swap;src: local('Santander Text'), local('SantanderText-Regular'), url(fonts/SantanderText-Regular.ttf);}@font-face{font-family: 'SantanderText';font-style: italic;font-weight: 400;font-display: swap;src: local('SantanderText-LightItalic'), local('SantanderText-LightItalic'), url(fonts/SantanderText-Italic.ttf);}@font-face{font-family: 'SantanderText';font-style: italic;font-weight: 300;font-display: swap;src: local('SantanderText-LightItalic'), local('SantanderText-LightItalic'), url(fonts/SantanderText-LightItalic.ttf);}@font-face{font-family: 'SantanderText';font-style: normal;font-weight: 300;font-display: swap;src: local('SantanderText-Light'), local('SantanderText-Light'), url(fonts/SantanderText-Light.ttf);}@font-face{font-family: 'SantanderText';font-style: italic;font-weight: 700;font-display: swap;src: local('SantanderText-BoldItalic'), local('SantanderText-BoldItalic'), url(fonts/SantanderText-BoldItalic.ttf);}@font-face{font-family: 'SantanderText';font-style: normal;font-weight: 700;font-display: swap;src: local('SantanderText-Bold'), local('SantanderText-Bold'), url(fonts/SantanderText-Bold.ttf);}html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;font-family: 'SantanderText' }
-* {
-  font-family: 'SantanderText', Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-smoothing: antialiased;
-  box-sizing: border-box;
-  outline: none;
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    box-sizing: border-box;
+    outline: none;
+    font-family:SantanderTextW05-Regular;
 }
 .pad-left-300{
     padding-left: 300px;
@@ -36,6 +35,55 @@
     margin: 15px 0 30px 0;
     color: #444;
     font-weight: 400;
+    font-family:SantanderTextW05-Regular;
+}
+.tipografias > p{
+    font-size: 18px;
+    margin: 5px 0 15px;
+    color: #444;
+}
+.tipografias .cont-codigo{
+    padding: 0px 0 1px;
+    max-width: 500px;
+}
+.title-type{
+    font-family:SantanderTextW05-Bold;
+    font-size: 14px;
+    display: block;
+    padding-top: 15px;
+    color: chocolate;
+}
+.std-text-light{
+    font-family:SantanderTextW05-Light;
+}
+.std-text-light-italic{
+    font-family:SantanderTextW05-LightIt;
+}
+.std-text-regular{
+    font-family:SantanderTextW05-Regular;
+}
+.std-text-italic{
+    font-family:SantanderTextW05-Italic;
+}
+.std-text-bold{
+    font-family:SantanderTextW05-Bold;
+}
+.std-text-bold-italic{
+    font-family:SantanderTextW05-BoldItalic;
+}
+.std-headline-bold{
+    font-family:SantanderHeadlineW05-Bold;
+}
+.std-headline-regular{
+    font-family:SantanderHeadlineW05-Regular;
+}
+.std-micro-light{
+    font-family:SantanderMicroTextW01-Light;
+    font-size: 12px !important;
+}
+.std-micro-light-italic{
+    font-family:SantanderMicroTextW01-LtIt;
+    font-size: 12px !important;
 }
 #contOp{
     width: -webkit-fill-available;
@@ -45,7 +93,7 @@
     padding: 15px !important;
     font-weight: 200 !important;
     font-size: 22px !important;
-    font-style: italic;
+    font-family:SantanderTextW05-LightIt;
     height: auto !important;
     line-height: 22px !important;
     border-bottom: 1px solid #ddd;
@@ -60,13 +108,14 @@
     max-width: 480px;
 }
 .cont-codigo{
-    padding: 15px;
+    padding: 15px 0;
     max-width: 850px;
 }
 .cont-codigo > h2{
     font-size: 18px;
     color: #444;
     margin-top: 20px;
+    font-family: SantanderTextW05-Regular;
     font-weight: 400;
 }
 .descargar{
