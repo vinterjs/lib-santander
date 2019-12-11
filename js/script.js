@@ -42,12 +42,13 @@ $(document).ready(function(){
     $(".soloNumeros").inputFilter(function(value){
         return /^-?\d*$/.test(value);
     });
-    //solo texto
+    //solo nombre
     $(".soloLetras").inputFilter(function(value){
-        return /^[a-z]*$/i.test(value);
+        return /^[A-zÀ-ÖØ-öø-ÿ´`-]*$/i.test(value);
     });
+    //solo texto y espacio
     $(".soloNombre").inputFilter(function(value){
-        return /^[ a-z]*$/i.test(value);
+        return /^[ A-zÀ-ÖØ-öø-ÿ´`-]*$/i.test(value);
     });
     //validacion telefono
     $(".input-std input.telefono").focusout(function(){
