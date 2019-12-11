@@ -1,7 +1,7 @@
 $(document).ready(function(){
     //rut
     var no_permitidas = ['!', '"', '$', '%', '&', '/', '(', ')', '=', '?', 'Ã‚Â¿', '*', 'Ã‚Â¨', '^', '{', '}', 'Ãƒâ€¡', 'ÃƒÂ§', 'Ã‚Âª', 'Ã‚Âº', ',', 'Dead', 'Ã‚Â´', '+', '`', '_', '@', '#', '|', 'Ã‚Â¢', 'Ã¢Ë†Å¾', 'Ã‚Â¬', 'ÃƒÂ·', 'Ã¢â‚¬Â', 'Ã¢â€° ', 'Ã‚Â´'];
-    var no_permitidas_eventkey = [192, 222, 16, 220, 187];
+    var no_permitidas_eventkey = [192, 222, 16, 220, 186, 187];
     var permitidas_eventkey = [190, 173, 110];
     $("#rut").keyup(function(e) {
         var valorRut = $("#rut").val();
