@@ -443,3 +443,70 @@
     background-color: #EC0000;
 }
 /*fin mensajes contextuales*/
+/*StepBox*/
+.step-box{
+    display: table;
+    padding: 8px;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px 4px 0 0;
+    background-color: white;
+    margin: 10px 0;
+}
+.step-box .cont-step{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    margin-top: -12px;
+}
+.step-box .step-mark{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    margin-top: -12px;
+}
+.step-mark span{
+    font-family:SantanderTextW05-Regular;
+    font-size: 14px;
+    color: #767676;
+    text-transform: uppercase;
+}
+.cont-step span{
+    display: inline-block;
+    font-family:SantanderTextW05-Bold;
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1BB3BC;
+    border: 2px solid #1BB3BC;
+    background: white;
+    text-align: center;
+    margin-right: 15px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+}
+.step-box .text-step{
+    vertical-align: middle;
+    display: table-cell;
+    text-align: left;
+    padding: 0px 65px 0px 30px;
+}
+.text-step p{
+    display: block;
+    color: #444;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 8px auto;
+    padding: 0 20px 0 15px;
+    text-transform: uppercase;
+    font-family:SantanderTextW05-Bold;
+}
+/*fin StepBox*/
+
+/*++++++++++++PROVISORIO++++++++++++++*/
+span.str-minimise{
+    font-size: 21px;
+}
