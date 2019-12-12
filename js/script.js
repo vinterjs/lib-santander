@@ -38,6 +38,10 @@ $(document).ready(function(){
     $(".input-std label").click(function(){
         $(this).parent().find("input").focus();
     });
+    //focus para el label
+    $(".input-std-textarea label").click(function(){
+        $(this).parent().find("textarea").focus();
+    });
     //solo numeros
     $(".soloNumeros").inputFilter(function(value){
         return /^-?\d*$/.test(value);
@@ -49,6 +53,11 @@ $(document).ready(function(){
     //solo texto y espacio
     $(".soloNombre").inputFilter(function(value){
         return /^[ A-zÀ-ÖØ-öø-ÿ´`-]*$/i.test(value);
+    });
+    //contador textarea
+    $(".input-std-textarea > textarea").keyup(function(){
+        var valor = $(this).val().length;
+        $(this).parent().find(".contador-text").find("span").text(valor);
     });
     //validacion telefono
     $(".input-std input.telefono").focusout(function(){
@@ -113,6 +122,24 @@ $(document).ready(function(){
             }
         });
     };
+}(jQuery));
+
+//resize textarea
+(function($){
+    $(".resize-textarea").each(function(){
+        var $this = $(this);
+        $this.css("min-height", $this.css("height"));
+        $this.css("overflow", "hidden");
+    }).on("input paste", function(){
+        var $this = $(this);
+        var offset = $this.innerHeight() - $this.height();
+        if( $this.innerHeight < this.scrollHeight ){
+            $this.height(this.scrollHeight - offset);
+        }else{
+            $this.height(1);
+            $this.height(this.scrollHeight - offset);
+        }
+    });
 }(jQuery));
 
 function isMail(mail, el){
