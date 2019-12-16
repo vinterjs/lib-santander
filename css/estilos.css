@@ -73,7 +73,7 @@
     height: 70px;
     margin-bottom: 15px;
 }
-.input-std > *, .input-std-textarea > *{
+.input-std > *, .input-std-textarea > *, .input-search > *{
     transition: ease-out .2s;
     -webkit-transition: ease-out .2s;
     -o-transition: ease-out .2s;
@@ -215,6 +215,32 @@
     font-size: 14px;
     color: #444;
     bottom: -18px;
+}
+.input-search{
+    position: relative;
+    display: inline-block;
+}
+.input-search > input{
+    padding: 0px 40px 0px 15px;
+    background-color: #F7FBFC;
+    border: 1px solid #CEDEE7;
+    border-radius: 35px;
+    font-size: 17px;
+    line-height: 24px;
+    min-width: 272px;
+    height: 48px;
+    font-family: SantanderTextW05-Regular;
+}
+.input-search > input:focus{
+    border: 2px solid #9BC3D3;
+}
+.input-search > span{
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    margin-top: -12px;
+    font-size: 25px;
+    color: #EC0000;
 }
 /*fin input*/
 /*CHECKBOX*/
