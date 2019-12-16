@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'santander-icons';
-  src:  url('https://banco.santander.cl/uploads/000/010/647/511bcdb3-15b6-4e7f-bb2e-a0b154a45a7c/original/santander-icons_20191209.eot');
-  src:  url('https://banco.santander.cl/uploads/000/010/647/511bcdb3-15b6-4e7f-bb2e-a0b154a45a7c/original/santander-icons_20191209.eot') format('embedded-opentype'),
-    url('https://banco.santander.cl/uploads/000/010/648/37a59e3a-7f66-4439-bf7a-300db38a369a/original/santander-icons_20191209.ttf') format('truetype'),
-    url('https://banco.santander.cl/uploads/000/010/650/b08a8367-64bd-4dcd-9551-2c8d3a46eaec/original/santander-icons_20191209.woff') format('woff'),
-    url('https://banco.santander.cl/uploads/000/010/649/589680a3-741a-4674-966c-88e2b66285f2/original/santander-icons_20191209.svg') format('svg');
+  src:  url('fonts/santander-icons_20191209.eot');
+  src:  url('fonts/santander-icons_20191209.eot') format('embedded-opentype'),
+    url('fonts/santander-icons_20191209.ttf') format('truetype'),
+    url('fonts/santander-icons_20191209.woff') format('woff'),
+    url('fonts/santander-icons_20191209.svg') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;

@@ -84,6 +84,10 @@
     color: #444;
     font-size: 17px;
     border: none;
+    border-radius: 4px 4px 0 0;
+    border-top: 1px solid #DEEDF2;
+    border-left: 1px solid #DEEDF2;
+    border-right: 1px solid #DEEDF2;
     padding: 0px 0 0 15px;
     background-color: #F7FBFC;
     font-family: SantanderTextW05-Regular;
@@ -112,7 +116,7 @@
     top: 50px;
     left: 0;
     width: 100%;
-    background-color: #CEDEE7;
+    background-color: #257FA4;
 }
 .input-std-textarea > .linea-input{
     position: absolute;
@@ -120,11 +124,10 @@
     bottom: 5px;
     left: 0;
     width: 100%;
-    background-color: #CEDEE7;
+    background-color: #257FA4;
 }
 .input-std > input:focus ~ .linea-input, .input-std-textarea > textarea:focus ~ .linea-input{
     height: 2px;
-    background-color: #9BC3D3;
 }
 .input-std > label, .input-std-textarea > label{
     position: absolute;
@@ -190,6 +193,10 @@
     color: #444;
     font-size: 17px;
     border: none;
+    border-radius: 4px 4px 0 0;
+    border-top: 1px solid #DEEDF2;
+    border-left: 1px solid #DEEDF2;
+    border-right: 1px solid #DEEDF2;
     padding: 15px 10px 10px 15px;
     background-color: #F7FBFC;
     font-family: SantanderTextW05-Regular;
@@ -452,7 +459,8 @@
     box-sizing: border-box;
     border-radius: 4px 4px 0 0;
     background-color: white;
-    margin: 10px 0;
+    margin: 10px 1px 0 1px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
 }
 .step-box .cont-step{
     position: absolute;
@@ -503,6 +511,67 @@
     padding: 0 20px 0 15px;
     text-transform: uppercase;
     font-family:SantanderTextW05-Bold;
+}
+.bar-step{
+    height: 4px;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+.bar-step > i{
+    background: #ccc;
+    display: block;
+    height: 4px;
+    border-radius: 2px;
+    margin: 0;
+    padding: 0;
+}
+.bar-step > i:first-child{
+    border-bottom-left-radius: 10px;
+}
+.bar-step > i:last-child{
+    border-bottom-right-radius: 10px;
+}
+.bar-step.dos-pasos > i{
+    width: 49.5%;
+}
+.bar-step.tres-pasos > i{
+    width: 33%;
+}
+.bar-step.cuatro-pasos > i{
+    width: 24.5%;
+}
+.bar-step.paso1 > i:nth-child(1),
+.bar-step.paso2 > i:nth-child(1),
+.bar-step.paso2 > i:nth-child(2),
+.bar-step.paso3 > i:nth-child(1),
+.bar-step.paso3 > i:nth-child(2),
+.bar-step.paso3 > i:nth-child(3),
+.bar-step.paso4 > i:nth-child(1),
+.bar-step.paso4 > i:nth-child(2),
+.bar-step.paso4 > i:nth-child(3),
+.bar-step.paso4 > i:nth-child(4)
+{
+    background: #1BB3BC;
+}
+@media(max-width:768px){
+    .bar-step.tres-pasos > i{
+        border-radius: 0;
+    }
+    .bar-step.tres-pasos > i {
+        width: 33.5%;
+        border-radius: 0;
+    }
+    .bar-step.dos-pasos > i {
+        width: 50%;
+        border-radius: 0;
+    }
+    .bar-step.cuatro-pasos > i{
+        width: 25%;
+        border-radius: 0;
+    }
 }
 /*fin StepBox*/
 
