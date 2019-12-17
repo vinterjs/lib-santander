@@ -67,6 +67,18 @@
     box-sizing: border-box;
     outline: none;
 }
+button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
+  }
+  
+  a {
+    outline: none;
+    text-decoration: none;
+    border: none;
+  }
 /*input*/
 .input-std{
     position: relative;
@@ -600,6 +612,324 @@
     }
 }
 /*fin StepBox*/
+/*botones*/
+.icon-right-side {
+    margin-left: 13px;
+ }
+ .icon-left-side {
+    margin-right: 10px;
+ }
+ .btn-std{
+    font-family:SantanderTextW05-Bold;
+    margin: 10px 0;
+ }
+ .btn-std > span{
+    font-size: 20px;
+    vertical-align: sub;
+ }
+ .btn_primario {
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    display: inline-block;
+    align-items: center;
+    background-color: #ec0000;
+    border-radius: 100px;
+    border: none;
+    padding: 8px 22px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    transition: All 0.3s ease;
+    -webkit-transition: All 0.3s ease;
+    -moz-transition: All 0.3s ease;
+    -o-transition: All 0.3s ease;
+ }
+ 
+ @media (max-width: 768px) {
+    .btn_primario {
+       font-size: 16px;
+       line-height: 24px;
+       padding: 12px 31px;
+    }
+ }
+ 
+ .btn_primario:hover {
+   background-color: #B30000;
+ }
+ 
+ .btn_primario.disabled  {
+    background-color: #C2C2C2;
+    cursor: initial;
+ }
+ 
+ /*.btn_primario span {
+    min-width: 12px;
+ }*/
+ 
+ .btn_secundario {
+    font-size: 14px;
+    line-height: 20px;
+    color: #ec0000;
+    display: inline-block;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 100px;
+    border: none;
+    padding: 8px 22px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    transition: All 0.3s ease;
+    -webkit-transition: All 0.3s ease;
+    -moz-transition: All 0.3s ease;
+    -o-transition: All 0.3s ease;
+    box-shadow: inset 0px 0px 0px 1px #C2C2C2;
+ }
+ .btn_secundario:hover {
+   box-shadow: inset 0px 0px 0px 1px #ec0000;
+ }
+ 
+ @media (max-width: 768px) {
+    .btn_secundario {
+       font-size: 16px;
+       line-height: 24px;
+       padding: 12px 31px;
+    }
+ }
+ 
+ .btn_secundario.disabled  {
+   color: #c2c2c2;
+   cursor: initial;
+ }
+ 
+ .btn_secundario.disabled:hover {
+    box-shadow: inset 0px 0px 0px 1px #C2C2C2;
+ }
+ 
+ 
+ 
+ .btn_plano {
+    font-size: 14px;
+    line-height: 20px;
+    color: #ec0000;
+    display: inline-block;
+    align-items: center;
+    border-radius: 100px;
+    border: none;
+    padding: 8px 22px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    transition: All 0.3s ease;
+    -webkit-transition: All 0.3s ease;
+    -moz-transition: All 0.3s ease;
+    -o-transition: All 0.3s ease;
+ }
+ @media (max-width: 768px) {
+    .btn_plano {
+       font-size: 16px;
+       line-height: 24px;
+       padding: 12px 31px;
+    }
+ }
+ 
+ .btn_plano:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+ }
+ 
+ .btn_plano.disabled {
+   color: #c2c2c2;
+   cursor: initial;
+ }
+ 
+ .btn_plano.disabled:hover {
+    background-color: #fff;
+ }
+ 
+ .btn_plano_icono {
+    font-size: 14px;
+    line-height: 20px;
+    color: #ec0000;
+    display: inline-block;
+    align-items: center;
+    border-radius: 100px;
+    border: none;
+    padding: 8px 22px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    transition: All 0.3s ease;
+    -webkit-transition: All 0.3s ease;
+    -moz-transition: All 0.3s ease;
+    -o-transition: All 0.3s ease;
+ }
+ @media (max-width: 768px) {
+    .btn_plano_icono {
+       font-size: 16px;
+       line-height: 24px;
+       padding: 12px 31px;
+    }
+ }
+ 
+ .btn_plano_icono.disabled {
+    color: #c2c2c2;
+    cursor: initial;
+ }
+ 
+ 
+ .btn_plano_secundario {
+    font-size: 14px;
+    line-height: 20px;
+    color: #137E84;
+    display: inline-block;
+    align-items: center;
+    border-radius: 100px;
+    border: none;
+    padding: 8px 22px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    transition: All 0.3s ease;
+    -webkit-transition: All 0.3s ease;
+    -moz-transition: All 0.3s ease;
+    -o-transition: All 0.3s ease;
+ }
+ @media (max-width: 768px) {
+    .btn_plano_secundario {
+       font-size: 16px;
+       line-height: 24px;
+       padding: 12px 31px;
+    }
+ }
+ 
+ .btn_plano_secundario:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+ }
+ 
+ .btn_plano_secundario.disabled {
+   color: #c2c2c2;
+   cursor: initial;
+ }
+ 
+ .btn_plano_secundario.disabled:hover {
+    background-color: #fff;
+ }
+ 
+ 
+ 
+ .btn_plano_icono_secundario {
+    font-size: 14px;
+    line-height: 20px;
+    color: #137E84;
+    display: inline-block;
+    align-items: center;
+    border-radius: 100px;
+    border: none;
+    padding: 8px 22px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    transition: All 0.3s ease;
+    -webkit-transition: All 0.3s ease;
+    -moz-transition: All 0.3s ease;
+    -o-transition: All 0.3s ease;
+ }
+ @media (max-width: 768px) {
+    .btn_plano_icono_secundario {
+       font-size: 16px;
+       line-height: 24px;
+       padding: 12px 31px;
+    }
+ }
+ 
+ .btn_plano_icono_secundario.disabled {
+    color: #c2c2c2;
+    cursor: initial;
+ }
+ 
+ 
+ 
+ 
+ .btn_volver {
+    font-size: 15px;
+    line-height: 24px;
+    display: inline-block;
+    align-items: center;
+    outline: none;
+    cursor: pointer;
+    text-transform: none;
+    padding: 8px 0;
+    color: #444;
+ }
+ 
+ 
+ .btn_outline {
+    font-size: 14px;
+    line-height: 20px;
+    color: #ec0000;
+    display: inline-block;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 100px;
+    border: none;
+    padding: 8px 22px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    transition: All 0.3s ease;
+    -webkit-transition: All 0.3s ease;
+    -moz-transition: All 0.3s ease;
+    -o-transition: All 0.3s ease;
+    box-shadow: inset 0px 0px 0px 1px #ec0000;
+ }
+ 
+ @media (max-width: 768px) {
+    .btn_outline {
+       font-size: 16px;
+       line-height: 24px;
+       padding: 12px 31px;
+    }
+ }
+ 
+ .btn_outline:hover { 
+    background-color: #ec0000;
+    color: #fff;
+ }
+ 
+ .btn_outline span {
+    color: #ec0000;
+ }
+ 
+ .btn_outline:hover span {
+    color: #fff;
+ }
+ 
+ .btn_outline.disabled {
+    box-shadow: inset 0px 0px 0px 1px #C2C2C2;
+    color: #c2c2c2;
+    cursor: initial;
+ }
+ 
+ .btn_outline:hover.disabled { 
+    background-color: #fff;
+ }
+/*fin botones*/
+
 
 /*++++++++++++PROVISORIO++++++++++++++*/
 span.str-minimise{

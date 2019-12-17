@@ -174,6 +174,26 @@
     right: 0;
     font-family:SantanderTextW05-Bold;
 }
+.relative-pos{
+    position: relative;
+}
+.copiado2{
+    display: none;
+    position: absolute;
+    background: #619943;
+    width: 115px;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 1%;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    font-family:SantanderTextW05-Bold;
+}
 .row-ico > .col-2.text-center{
     text-align: center;
 }

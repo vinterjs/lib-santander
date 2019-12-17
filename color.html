@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/prism.css">
     <title>Color</title>
 </head>
-<body>
+<body class="relative-pos">
     <h5 class="titleIf">Color</h5>
     <span class="title-type">Primarios</span>
     <div class="contenedor-color">
@@ -64,19 +64,6 @@
         <div class="color-box" rgba="rgb(27, 179, 188, 0.1)"></div>
     </div> 
     <div class="contenedor-color">
-        <div class="color-box" color="#732645"></div>
-        <div class="color-box" color="#9E3667"></div>
-        <div class="color-box" rgba="rgb(158, 54, 103, 0.9)"></div>
-        <div class="color-box" rgba="rgb(158, 54, 103, 0.8)"></div>
-        <div class="color-box" rgba="rgb(158, 54, 103, 0.7)"></div>
-        <div class="color-box" rgba="rgb(158, 54, 103, 0.6)"></div>
-        <div class="color-box" rgba="rgb(158, 54, 103, 0.5)"></div>
-        <div class="color-box" rgba="rgb(158, 54, 103, 0.4)"></div>
-        <div class="color-box" rgba="rgb(158, 54, 103, 0.3)"></div>
-        <div class="color-box" rgba="rgb(158, 54, 103, 0.2)"></div>
-        <div class="color-box" rgba="rgb(158, 54, 103, 0.1)"></div>
-    </div>
-    <div class="contenedor-color">
         <div class="color-box" color="#0032E6"></div>
         <div class="color-box" color="#3366FF"></div>
         <div class="color-box" rgba="rgb(51, 102, 255, 0.9)"></div>
@@ -88,6 +75,19 @@
         <div class="color-box" rgba="rgb(51, 102, 255, 0.3)"></div>
         <div class="color-box" rgba="rgb(51, 102, 255, 0.2)"></div>
         <div class="color-box" rgba="rgb(51, 102, 255, 0.1)"></div>
+    </div>
+    <div class="contenedor-color">
+        <div class="color-box" color="#732645"></div>
+        <div class="color-box" color="#9E3667"></div>
+        <div class="color-box" rgba="rgb(158, 54, 103, 0.9)"></div>
+        <div class="color-box" rgba="rgb(158, 54, 103, 0.8)"></div>
+        <div class="color-box" rgba="rgb(158, 54, 103, 0.7)"></div>
+        <div class="color-box" rgba="rgb(158, 54, 103, 0.6)"></div>
+        <div class="color-box" rgba="rgb(158, 54, 103, 0.5)"></div>
+        <div class="color-box" rgba="rgb(158, 54, 103, 0.4)"></div>
+        <div class="color-box" rgba="rgb(158, 54, 103, 0.3)"></div>
+        <div class="color-box" rgba="rgb(158, 54, 103, 0.2)"></div>
+        <div class="color-box" rgba="rgb(158, 54, 103, 0.1)"></div>
     </div>
     <h5 class="titleIf">Segmentaci&oacute;n</h5>
     <span class="title-type">Empresas</span>
@@ -111,7 +111,6 @@
         <div class="color-box color-gradient" gradient="linear-gradient(90deg, #9E3667 0%, #1BB3BC 100%)"></div>
     </div>
     <script src="js/jquery.min.js"></script>
-    <script src="js/prism.js"></script>
     <script>
         $(document).ready(function(){
             $(".color-box").each(function(){
@@ -131,22 +130,27 @@
                 var rgba = $(this).attr("rgba");
                 var grad = $(this).attr("gradient");
                 if( typeof clr !== typeof undefined && clr !== false ){
-                    copiar(e, clr);
+                    copiar(this, clr);
                 }else if( typeof rgba !== typeof undefined && rgba !== false ){
-                    copiar(e, rgba);
+                    copiar(this, rgba);
                 }else{
-                    copiar(e, grad);
+                    copiar(this, grad);
                 }
             });
         });
         function copiar(elem,color){
-            var copiado = "<div class='copiado'>Copiado!</div>";
+            var copiado = "<div class='copiado2'>Copiado!</div>";
             var aux = document.createElement("input");
             aux.setAttribute("value", color);
             document.body.appendChild(aux);
             aux.select();
             document.execCommand("copy");
             document.body.removeChild(aux);
+            $(elem).closest("body").prepend(copiado);
+            //$("body > .copiado2").fadeIn("fast").delay(700).fadeOut().remove();
+            $("body > .copiado2").fadeIn("fast").delay(700).fadeOut(function(){
+                $(this).remove();
+            });
         }
     </script>
 </body>
